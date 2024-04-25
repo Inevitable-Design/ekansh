@@ -13,7 +13,7 @@ npx ekansh
 ```
 or 
 ```zsh
-pnpx ekansh
+pnpx ekansh@latest
 ```
 
 ### Prerequisites
