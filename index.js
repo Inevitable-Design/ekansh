@@ -61,7 +61,7 @@ async function main() {
 
         intro(`Quick Launch Links`);
         await displayQuickLaunchLinks();
-        outro(`Press 'e' to exit or any other key to continue.`);
+        // outro(`Press exit to exit or continue`);
         
         const exitOption = await select({
             message: 'Your choice:',
