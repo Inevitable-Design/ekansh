@@ -4,18 +4,20 @@ import figlet from 'figlet';
 import { intro, outro, select, spinner  } from '@clack/prompts';
 import data from './lib/data.js';
 import open from 'open';
-import fs from 'fs';
+// import fs from 'fs';
 import path from 'path';
 import lolcatjs from 'lolcatjs';
 
 const __dirname = './static/fonts/'
-let fontData = fs.readFileSync(path.join(__dirname, "3d.flf"), "utf8");
+// let fontData = fs.readFileSync(path.join(__dirname, "3d.flf"), "utf8");
 
 // Function to display ASCII art
 function displayAsciiArt() {
-    figlet.parseFont("3d", fontData)
+    // figlet.parseFont("3d", fontData)
     lolcatjs.options.animate = true;
-    lolcatjs.fromString(figlet.textSync(`${data.cli}`, "3d") + `\n\nVersion: ${data.version} | Made with love by ${data.author}`);
+    lolcatjs.fromString(figlet.textSync(`${data.cli}`,{
+        font: "poison",
+    }), + `\n\nVersion: ${data.version} | Made with love by ${data.author}`);
 }
 
 function displayUserBio() {
