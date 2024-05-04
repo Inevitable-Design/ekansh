@@ -1,5 +1,5 @@
 
-# Inevitable CLI cum Socials Card
+# Inevitable CLI / Socials Card
 
 ## About
 
